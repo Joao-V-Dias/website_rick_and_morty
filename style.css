@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@font-face {
+  font-family: "Rick";
+  src: url(./font/get_schwifty.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #202020;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Rick";
+  font-size: 15vw;
+  text-align: center;
+  padding: 10vh;
+  color: #ffff;
+  animation: animationH1 8s infinite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter {
+  padding-bottom: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.bi {
+  margin: 0 3%;
+  color: #ffffff;
+  width: 5vh;
+}
+
+.bi:hover {
+  color: #999999;
+}
+
+#textFilter {
+  width: 200px;
+  height: 5vh;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #01ff16;
+  color: #fff;
+  outline: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 5vw;
+}
+
+.card {
+  width: 350px;
+  height: 470px;
+  background-color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 45px -18px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  color: #c2c2c2;
+}
+
+.inf {
+  width: 90%;
+}
+
+img {
+  border-radius: 64% 36% 75% 25% / 33% 73% 27% 67%;
+}
+
+.dead {
+  filter: grayscale(1);
+}
+
+.contentImg {
+  position: relative;
+}
+
+.deadImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border-radius: 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100vw;
+}
+
+.btn-pag {
+  font-size: 5rem;
+  padding: 3%;
+  user-select: none;
+}
+
+.btn-pag:hover {
+  text-shadow: 0px 0px 20px #01ff16;
+  cursor: pointer;
+}
+
+.error {
+  padding: 10vw;
+  color: #ff0000;
+  background-color: #1b1b1b;
+  border-radius: 20px;
+  display: none;
+}
+
+footer{
+  text-align: center;
+  color: #fff;
+  background-color: #202020;
+  padding: 1%;
+}
+
+@keyframes animationH1 {
+  0%{
+    text-shadow: 0px 0px 0px #01ff16
+  }
+  50%{
+    text-shadow: 0px 0px 50px #01ff16
+  }
+  100%{
+    text-shadow: 0px 0px 0px #01ff16
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 10px;
+}
